@@ -28,3 +28,28 @@ Register a new user by creating a user account with the provided information
 - `email` (string): Valid email address of the user.
 - `password` (string): Password for the user account (minimum 6 characters).
 - `token`(String): JWT Token
+
+## `/users/login` Endpoint
+
+### Description
+
+Authenticate an existing user using their email and password.
+
+### HTTP Method
+
+`POST`
+
+### Request Body
+
+- `email` (string, required): Email address of the user.
+- `password` (string, required): Password for the user account (minimum 6 characters).
+
+#### Example Response
+
+- `user` (object):
+   - `fullname`(object).
+      - `firstname` (string): First name of the user (minimum 3 characters).
+      - `lastname` (string): Last name of the user (minimum 3 characters).
+- `email` (string): Valid email address of the user.
+- `password` (string): Password for the user account (minimum 6 characters).
+- `token`(String): JWT Token
