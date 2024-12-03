@@ -128,3 +128,6 @@ Register a new captain by creating a captain account with the provided informati
       - `capacity` (number): Capacity of the vehicle.
       - `vehicleType` (string): Type of the vehicle.
 - `token` (string): JWT Token
+
+
+
