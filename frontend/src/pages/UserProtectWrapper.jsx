@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { UserDataContext } from '../context/userContext'
+import { UserDataContext } from '../context/UserContext'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -27,7 +27,6 @@ const UserProtectWrapper = ({
             }
         })
             .catch(err => {
-                console.log(err)
                 localStorage.removeItem('token')
                 navigate('/login')
             })

@@ -15,7 +15,7 @@ const CaptainProtectWrapper = ({
 
 
 
-    useEffect(() => {
+   useEffect(() => {
         if (!token) {
             navigate('/captain-login')
         }
@@ -31,7 +31,6 @@ const CaptainProtectWrapper = ({
             }
         })
             .catch(err => {
-
                 localStorage.removeItem('token')
                 navigate('/captain-login')
             })
