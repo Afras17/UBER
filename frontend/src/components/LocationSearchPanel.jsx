@@ -1,7 +1,7 @@
 import React from 'react'
 
 const LocationSearchPanel = (props) => {
-  
+
 
   const locations = [
     "24B, Near Kapoor's cafe, Sheryians Coding School, Bhopal",
@@ -12,8 +12,8 @@ const LocationSearchPanel = (props) => {
   return (
     <div>
       {
-        locations.map(function (elem,idx) {
-          return <div key={idx} onClick={()=>{
+        locations.map(function (elem, idx) {
+          return <div key={idx} onClick={() => {
             props.setVehiclePanelOpen(true)
             props.setPanelOpen(true)
           }} className='flex gap-4 border-2 p-3 border-gray-50 active:border-black rounded-xl items-center my-2 justify-start'>
